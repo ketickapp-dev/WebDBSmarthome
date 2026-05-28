@@ -1,19 +1,22 @@
+```html
 <!DOCTYPE html>
 <html lang="ms">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DARKbang Smarthome & Security</title>
+    <title>DARKbang Smarthome & Security - Pakar Pemasangan CCTV</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        tiandy: '#00B050', // Warna hijau tema Tiandy
-                        dbred: '#FF3333', // Merah dari logo DARKbang
-                        dbgold: '#E5A93C', // Kuning keemasan dari logo
-                        dbdark: '#111827', // Tema gelap 
+                        tiandy: '#00B050', // Hijau Tiandy
+                        dahua: '#D31224', // Merah Dahua
+                        hikvision: '#C8102E', // Merah Hikvision
+                        dbred: '#FF3333', // Merah DARKbang
+                        dbgold: '#E5A93C', // Kuning DARKbang
+                        dbdark: '#111827',
                         dbcard: '#1F2937'
                     }
                 }
@@ -21,110 +24,181 @@
         }
     </script>
 </head>
-<body class="bg-dbdark text-gray-200 font-sans antialiased">
+<body class="bg-dbdark text-gray-200 font-sans antialiased scroll-smooth">
 
-    <!-- Navigasi (Menggunakan Tema DB Smarthome) -->
-    <nav class="bg-black shadow-md py-4 px-6 sticky top-0 z-50 border-b border-dbred border-opacity-30">
+    <!-- Navigasi -->
+    <nav class="bg-black shadow-lg py-4 px-6 sticky top-0 z-50 border-b border-dbred border-opacity-30">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex items-center gap-4">
-                <!-- Logo Company -->
+                <!-- Logo -->
                 <img src="105027.png" alt="Logo DARKbang" class="h-14 w-auto object-contain bg-white p-1 rounded">
-                <div class="hidden sm:block text-xl font-bold tracking-wider text-white">
+                <div class="hidden sm:block text-xl font-bold tracking-wider text-white leading-tight">
                     DARK<span class="text-dbred">bang</span> <br>
                     <span class="text-sm font-normal text-dbgold">Smarthome & Security</span>
                 </div>
             </div>
-            <div class="hidden md:flex space-x-6">
-                <a href="#utama" class="hover:text-dbgold transition">Promosi Tiandy</a>
-                <a href="#jenama" class="hover:text-dbgold transition">Jenama Pilihan</a>
-                <a href="#hubungi" class="bg-dbred hover:bg-red-700 px-4 py-2 rounded text-white transition">Hubungi Kami</a>
+            <div class="hidden md:flex space-x-8 items-center text-sm font-medium">
+                <a href="#servis" class="hover:text-dbgold transition">Servis Pemasangan</a>
+                <a href="#jenama" class="hover:text-dbgold transition">Pilihan Jenama</a>
+                <a href="#hubungi" class="bg-dbred hover:bg-red-700 px-5 py-2.5 rounded-md text-white transition shadow-md">Hubungi Kami</a>
             </div>
         </div>
     </nav>
 
-    <!-- Seksyen Hero (Dikhaskan untuk Tema Hijau Tiandy) -->
-    <section id="utama" class="relative bg-black py-20 px-6 border-b border-gray-800">
+    <!-- Seksyen Hero (Fokus Pemasangan) -->
+    <section id="servis" class="relative bg-gradient-to-b from-black to-dbdark py-20 px-6 border-b border-gray-800">
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div>
-                <span class="inline-block bg-tiandy text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide mb-4 shadow-[0_0_10px_rgba(0,176,80,0.5)]">
-                    Promosi Hangat
+                <span class="inline-block bg-dbcard border border-dbgold text-dbgold text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wide mb-6 shadow-sm">
+                    Pakar Keselamatan Anda
                 </span>
-                <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
-                    Tingkatkan Keselamatan dengan <span class="text-tiandy">CCTV Tiandy</span>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-6">
+                    Servis Pemasangan <span class="text-dbred">CCTV & Sistem Rangkaian</span> Profesional
                 </h1>
-                <p class="text-gray-400 text-lg mb-6">
-                    Penyelesaian keselamatan pintar terkini untuk kediaman dan premis perniagaan anda. Kini didatangkan dengan ciri-ciri premium pada harga mampu milik.
+                <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                    Kami menawarkan perkhidmatan pemasangan sistem keselamatan yang kemas, selamat, dan bersistem untuk kediaman serta premis perniagaan anda. Kualiti kerja terjamin dengan sokongan selepas jualan yang mantap.
                 </p>
-                <ul class="space-y-3 text-gray-300 mb-8">
-                    <li class="flex items-center gap-2">
-                        <svg class="w-6 h-6 text-tiandy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Waranti 3 Tahun
+                <ul class="space-y-4 text-gray-300 mb-10">
+                    <li class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-dbgold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <div>
+                            <strong class="text-white">Kerja Pendawaian Kemas & Tersusun</strong>
+                            <p class="text-sm text-gray-500 mt-1">Kami pastikan kabel disorok rapi atau diletakkan dalam konduit (casing) untuk estetika dan ketahanan.</p>
+                        </div>
                     </li>
-                    <li class="flex items-center gap-2">
-                        <svg class="w-6 h-6 text-tiandy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Kelebihan Teknologi PoE
+                    <li class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-dbgold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <div>
+                            <strong class="text-white">Juruteknik Berpengalaman</strong>
+                            <p class="text-sm text-gray-500 mt-1">Pasukan kami terlatih dalam selok-belok teknikal, mencari sudut pandangan (angle) terbaik untuk maksimumkan sekuriti.</p>
+                        </div>
                     </li>
-                    <li class="flex items-center gap-2">
-                        <svg class="w-6 h-6 text-tiandy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Mikrofon Terbina Dalam (Built-in Mic)
-                    </li>
-                    <li class="flex items-center gap-2">
-                        <svg class="w-6 h-6 text-tiandy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                        Kualiti IP Camera, Harga Analog
+                    <li class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-dbgold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <div>
+                            <strong class="text-white">Sokongan Selepas Jualan (After-Sales)</strong>
+                            <p class="text-sm text-gray-500 mt-1">Bukan sekadar pasang dan tinggal. Kami berikan bantuan teknikal jika anda hadapi masalah dengan sistem.</p>
+                        </div>
                     </li>
                 </ul>
-                <a href="#hubungi" class="inline-block bg-tiandy hover:bg-green-500 text-white font-semibold py-3 px-8 rounded shadow-lg transition">
-                    Dapatkan Sebut Harga
+                <a href="#hubungi" class="inline-flex items-center justify-center gap-2 bg-dbred hover:bg-red-700 text-white font-semibold py-3.5 px-8 rounded-md shadow-lg transition duration-300 w-full sm:w-auto">
+                    Tempah Slot Pemasangan
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                 </a>
             </div>
-            <!-- Ruang untuk gambar produk Tiandy -->
-            <div class="relative h-64 md:h-96 bg-dbcard rounded-lg flex items-center justify-center border border-tiandy shadow-[0_0_20px_rgba(0,176,80,0.15)]">
-                <span class="text-gray-500 font-medium">[ Letak Gambar CCTV Tiandy Di Sini ]</span>
+            <!-- Gambar Hero: Boleh letak gambar juruteknik sedang pasang CCTV atau hasil kerja wiring yang kemas -->
+            <div class="relative h-80 md:h-[500px] bg-dbcard rounded-xl flex items-center justify-center border border-gray-700 shadow-2xl overflow-hidden group">
+                <div class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-20 transition duration-500"></div>
+                <span class="text-gray-500 font-medium z-10 text-center px-4">
+                    [ Letak Gambar Pemasangan CCTV / Kerja Wiring Di Sini ]
+                </span>
             </div>
         </div>
     </section>
 
-    <!-- Seksyen Jenama (Tema Gelap & Logo Syarikat) -->
-    <section id="jenama" class="py-20 px-6 bg-dbdark border-b border-gray-800">
-        <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-3xl font-bold text-white mb-4">Rakan Jenama Kami</h2>
-            <p class="text-gray-400 mb-12">Kami membekalkan dan memasang sistem CCTV dari jenama terkemuka yang diyakini kualitinya.</p>
+    <!-- Seksyen 3 Jenama -->
+    <section id="jenama" class="py-24 px-6 bg-black border-b border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Pilihan Jenama Utama</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Kami merupakan pembekal dan pemasang sah untuk 3 jenama gergasi CCTV global. Pilih mengikut bajet dan keperluan teknologi anda.</p>
+            </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Tiandy Card -->
-                <div class="bg-dbcard p-8 rounded-lg border border-tiandy shadow-[0_0_15px_rgba(0,176,80,0.2)]">
-                    <h3 class="text-2xl font-bold text-tiandy mb-2">TIANDY</h3>
-                    <span class="inline-block bg-red-600 text-white text-xs font-bold px-2 py-1 rounded mb-4">HOT ITEM</span>
-                    <p class="text-gray-400 text-sm">Teknologi Color Maker terulung dengan tawaran harga paling berbaloi di pasaran.</p>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- Bahagian 1: TIANDY (Hot Item) -->
+                <div class="relative bg-dbdark p-8 rounded-xl border border-tiandy shadow-[0_0_20px_rgba(0,176,80,0.15)] flex flex-col hover:transform hover:-translate-y-2 transition duration-300">
+                    <div class="absolute -top-4 right-8 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg animate-pulse">
+                        HOT & BERBALOI
+                    </div>
+                    <div class="h-16 flex items-center mb-6">
+                        <!-- Placeholder Logo Tiandy -->
+                        <h3 class="text-3xl font-extrabold text-tiandy tracking-wider">TIANDY</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow">
+                        Sangat disyorkan! Jenama yang sedang meningkat naik dengan tawaran spesifikasi paling tinggi pada harga yang sangat mampu milik. Pilihan nombor 1 pelanggan kami masa kini.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-300 mb-8 border-t border-gray-700 pt-6">
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tiandy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Teknologi IP Camera pada harga Analog</li>
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tiandy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Built-in Mic (Audio dua hala)</li>
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tiandy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Color Maker (Visual berwarna pada waktu malam)</li>
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-tiandy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> <strong>Waranti Penuh 3 Tahun</strong></li>
+                    </ul>
+                    <button class="w-full bg-tiandy bg-opacity-20 hover:bg-opacity-100 text-tiandy hover:text-white border border-tiandy py-2.5 rounded transition font-medium">
+                        Lihat Pakej Tiandy
+                    </button>
                 </div>
 
-                <!-- Dahua Card -->
-                <div class="bg-dbcard p-8 rounded-lg border border-gray-700 hover:border-dbred hover:shadow-[0_0_15px_rgba(255,51,51,0.2)] transition duration-300">
-                    <h3 class="text-2xl font-bold text-white mb-2">DAHUA</h3>
-                    <div class="h-6"></div> 
-                    <p class="text-gray-400 text-sm">Penyelesaian pemantauan pintar dan sekuriti yang dipercayai di seluruh dunia.</p>
+                <!-- Bahagian 2: DAHUA -->
+                <div class="bg-dbcard p-8 rounded-xl border border-gray-700 hover:border-dahua flex flex-col hover:transform hover:-translate-y-2 transition duration-300">
+                    <div class="h-16 flex items-center mb-6">
+                        <!-- Placeholder Logo Dahua -->
+                        <h3 class="text-3xl font-extrabold text-white tracking-wider">alhua</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow">
+                        Jenama bertaraf antarabangsa yang terkenal dengan teknologi pintar dan analisis video canggih. Sesuai untuk pengguna yang mahukan kebolehpercayaan jangka panjang.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-300 mb-8 border-t border-gray-700 pt-6">
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-dahua" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Kestabilan Sistem Terbukti</li>
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-dahua" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Ciri AI (Kecerdasan Buatan) termaju</li>
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-dahua" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Pengesanan pergerakan manusia/kenderaan tepat</li>
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-dahua" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Pilihan tepat untuk premis komersial</li>
+                    </ul>
+                    <button class="w-full bg-transparent hover:bg-dahua text-gray-300 hover:text-white border border-gray-600 hover:border-dahua py-2.5 rounded transition font-medium">
+                        Lihat Pakej Dahua
+                    </button>
                 </div>
 
-                <!-- Hikvision Card -->
-                <div class="bg-dbcard p-8 rounded-lg border border-gray-700 hover:border-dbred hover:shadow-[0_0_15px_rgba(255,51,51,0.2)] transition duration-300">
-                    <h3 class="text-2xl font-bold text-white mb-2">HIKVISION</h3>
-                    <div class="h-6"></div>
-                    <p class="text-gray-400 text-sm">Kualiti visual beresolusi tinggi dengan ketahanan produk pada tahap maksimum.</p>
+                <!-- Bahagian 3: HIKVISION -->
+                <div class="bg-dbcard p-8 rounded-xl border border-gray-700 hover:border-hikvision flex flex-col hover:transform hover:-translate-y-2 transition duration-300">
+                    <div class="h-16 flex items-center mb-6">
+                        <!-- Placeholder Logo Hikvision -->
+                        <h3 class="text-3xl font-extrabold text-white tracking-wider">HIKVISION</h3>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-6 flex-grow">
+                        Peneraju pasaran CCTV global. Terkenal dengan ketahanan produk (heavy duty) dan resolusi imej yang sangat tajam. Sangat popular di kalangan syarikat besar.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-300 mb-8 border-t border-gray-700 pt-6">
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-hikvision" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Pemegang pasaran CCTV No.1 Dunia</li>
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-hikvision" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Kualiti lensa beresolusi sangat tinggi</li>
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-hikvision" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Material binaan kamera tahan lasak (cuaca/vandalisme)</li>
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-hikvision" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Sesuai untuk industri dan kilang</li>
+                    </ul>
+                    <button class="w-full bg-transparent hover:bg-hikvision text-gray-300 hover:text-white border border-gray-600 hover:border-hikvision py-2.5 rounded transition font-medium">
+                        Lihat Pakej Hikvision
+                    </button>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Footer (Tema DB Smarthome) -->
-    <footer id="hubungi" class="bg-black py-10 px-6 text-center border-t border-dbred">
-        <div class="max-w-7xl mx-auto flex flex-col items-center">
-            <img src="105027.png" alt="Logo Bawah" class="h-12 w-auto object-contain bg-white p-1 rounded mb-4 opacity-90">
-            <h2 class="text-xl font-bold text-white mb-2">DARK<span class="text-dbred">bang</span> Smarthome & Security</h2>
-            <p class="text-dbgold mb-6 font-medium">Pakar Pemasangan CCTV & Sistem Rangkaian Anda</p>
-            <div class="h-px w-24 bg-gray-700 mb-6"></div>
-            <p class="text-sm text-gray-500">&copy; 2026 DARKbang Smarthome & Security. Hak Cipta Terpelihara.</p>
+    <!-- Footer -->
+    <footer id="hubungi" class="bg-dbdark py-12 px-6 text-center border-t-4 border-dbred relative overflow-hidden">
+        <div class="max-w-4xl mx-auto relative z-10 flex flex-col items-center">
+            <img src="105027.png" alt="Logo DARKbang" class="h-16 w-auto object-contain bg-white p-1 rounded-md mb-6 shadow-md">
+            
+            <h2 class="text-2xl font-bold text-white mb-2">Sedia Untuk Lindungi Premis Anda?</h2>
+            <p class="text-gray-400 mb-8 max-w-lg mx-auto">Dapatkan sebut harga percuma atau khidmat nasihat dari pakar pemasangan kami hari ini.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-10 w-full sm:w-auto">
+                <a href="#" class="flex items-center justify-center gap-2 bg-[#25D366] hover:bg-green-600 text-white px-8 py-3 rounded-md font-semibold transition shadow-lg">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                    WhatsApp Kami
+                </a>
+                <a href="tel:0123456789" class="flex items-center justify-center gap-2 bg-gray-700 hover:bg-gray-600 text-white px-8 py-3 rounded-md font-semibold transition shadow-lg">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    Panggilan Terus
+                </a>
+            </div>
+            
+            <div class="h-px w-full max-w-xs bg-gray-700 mb-6 opacity-50"></div>
+            <p class="text-sm text-gray-500">&copy; 2026 DARKbang Smarthome & Security. Semua Hak Cipta Terpelihara.</p>
         </div>
     </footer>
 
 </body>
 </html>
+`
+
+```
